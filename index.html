@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Avenue Flowers — Germantown, Maryland</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-inner">
+    <span>✦ Same Day Delivery Available — Order by 2PM</span>
+    <span>✦ Exclusive Hand-Crafted Arrangements</span>
+    <span>✦ Serving Germantown, Maryland</span>
+    <span>✦ Call 240-284-6518</span>
+    <span>✦ Same Day Delivery Available — Order by 2PM</span>
+    <span>✦ Exclusive Hand-Crafted Arrangements</span>
+    <span>✦ Serving Germantown, Maryland</span>
+    <span>✦ Call 240-284-6518</span>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo"><em>Avenue</em> flowers</a>
+  <ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Occasions</a></li>
+    <li><a href="#">Wedding Planner</a></li>
+    <li><a href="#shop">Our Shop</a></li>
+    <li><a href="#contact" class="nav-cta">Order Now</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="cart-btn">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+      Cart (0)
+    </div>
+  </div>
+  <button class="hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#" onclick="closeMobile()">Home</a>
+  <a href="#" onclick="closeMobile()">Occasions</a>
+  <a href="#" onclick="closeMobile()">Wedding Planner</a>
+  <a href="#shop" onclick="closeMobile()">Our Shop</a>
+  <a href="#contact" class="mobile-cta" onclick="closeMobile()">Order Now</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-eyebrow fade-up">Germantown's Premier Florist</div>
+    <h1 class="hero-headline fade-up delay-1">Artful<br>Moments in<br><em>Full Bloom</em></h1>
+    <p class="hero-sub fade-up delay-2">Each arrangement is a living work of art — hand-crafted with the finest seasonal blooms and delivered the same day across Germantown, Maryland.</p>
+    <div class="hero-actions fade-up delay-3">
+      <a href="#shop" class="btn-primary">Shop Arrangements</a>
+      <a href="#about" class="btn-ghost">Our Story →</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-placeholder">
+      <div style="text-align:center;color:rgba(255,255,255,0.8);">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:80px;line-height:1;"></div>
+        <div style="font-size:12px;letter-spacing:0.22em;text-transform:uppercase;margin-top:12px;"></div>
+      </div>
+    </div>
+    <div class="hero-badge">
+      <div class="hero-badge-num">960+</div>
+      <div class="hero-badge-text">Happy Customers</div>
+    </div>
+  </div>
+</section>
+
+<!-- COUNTDOWN BAR -->
+<div class="countdown-bar">
+  <div class="countdown-label"><span>Same-Day Delivery</span> ends in:</div>
+  <div class="countdown-units">
+    <div class="cd-unit"><span class="cd-num" id="cd-h">12</span><span class="cd-label">Hours</span></div>
+    <span class="cd-sep">:</span>
+    <div class="cd-unit"><span class="cd-num" id="cd-m">00</span><span class="cd-label">Min</span></div>
+    <span class="cd-sep">:</span>
+    <div class="cd-unit"><span class="cd-num" id="cd-s">00</span><span class="cd-label">Sec</span></div>
+  </div>
+</div>
+
+<!-- FEATURES -->
+<div class="features">
+  <div class="feature">
+    <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    <div class="feature-title">Unique Collections</div>
+    <div class="feature-text">Curated bouquets and living plants sourced from the finest local growers.</div>
+  </div>
+  <div class="feature">
+    <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+    <div class="feature-title">Quick Delivery</div>
+    <div class="feature-text">Same-day hand delivery on every order placed before 2PM.</div>
+  </div>
+  <div class="feature">
+    <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+    <div class="feature-title">Exclusive Designs</div>
+    <div class="feature-text">Every piece hand-arranged by our master florists — never mass-produced.</div>
+  </div>
+</div>
+
+<!-- PRODUCTS -->
+<section class="products-section" id="shop">
+  <div class="section-header">
+    <div class="section-eyebrow">Our Shop</div>
+    <h2 class="section-title">Wonderful Arrangements</h2>
+    <p class="section-sub">Flower Shop Germantown — crafted with love for every occasion</p>
+  </div>
+  <div class="products-grid">
+    <div class="product-card">
+      <div class="product-img-wrap" style="background:linear-gradient(135deg,#f9e8e2,#e8b8a8);"><img src="https://cdn.flowersnfruits.com/uploads/product/flowers_n_fruits/OCT2024/1729063058255-BouquetofPinkRosesTeddy.webp" alt=""><div class="product-tag">Bestseller</div></div>
+      <div class="product-info"><div class="product-name">The Joplin</div><div class="product-price">FROM €134.95</div></div>
+      <a href="#" class="product-cta">Add to Cart</a>
+    </div>
+    <div class="product-card">
+      <div class="product-img-wrap" style="background:linear-gradient(135deg,#fff3d0,#f7d08a);"><img src="https://floraldelights.ph/cdn/shop/files/Pink_Rose_Bouquet_table.webp?v=1765881541&width=1445" alt=""></div>
+      <div class="product-info"><div class="product-name">Sunny Terrace</div><div class="product-price">FROM €101.95</div></div>
+      <a href="#" class="product-cta">Add to Cart</a>
+    </div>
+    <div class="product-card">
+      <div class="product-img-wrap" style="background:linear-gradient(135deg,#e8d5f2,#b8a0d0);"><img src="https://www.bettergiftflowers.com/wp-content/uploads/2020/09/10-red-roses-bouquet.jpg" alt=""></div>
+      <div class="product-info"><div class="product-name">Starry Night</div><div class="product-price">FROM €62.95</div></div>
+      <a href="#" class="product-cta">Add to Cart</a>
+    </div>
+    <div class="product-card">
+      <div class="product-img-wrap" style="background:linear-gradient(135deg,#fde8d8,#f4a882);"><img src="https://www.naturalflowers.co.in/wp-content/uploads/2024/12/mix-roses0-arrangement.webp" alt=""><div class="product-tag">New</div></div>
+      <div class="product-info"><div class="product-name">Peach Rose Bouquet</div><div class="product-price">FROM €59.95</div></div>
+      <a href="#" class="product-cta">Add to Cart</a>
+    </div>
+  </div>
+
+  <div class="products-grid" style="margin-top: 30px;">
+    <div class="product-card">
+      <div class="product-img-wrap" style="background:linear-gradient(135deg,#f9e8e2,#e8b8a8);"><img src="https://perfectgiftadda.com/wp-content/uploads/2023/08/IMG_9142-scaled.jpeg" alt=""><div class="product-tag">Bestseller</div></div>
+      <div class="product-info"><div class="product-name">The Joplin</div><div class="product-price">FROM €134.95</div></div>
+      <a href="#" class="product-cta">Add to Cart</a>
+    </div>
+    <div class="product-card">
+      <div class="product-img-wrap" style="background:linear-gradient(135deg,#fff3d0,#f7d08a);"><img src="https://www.bettergiftflowers.com/wp-content/uploads/2017/09/evocative-bouquet-of-10-red-roses.jpg" alt=""></div>
+      <div class="product-info"><div class="product-name">Sunny Terrace</div><div class="product-price">FROM €101.95</div></div>
+      <a href="#" class="product-cta">Add to Cart</a>
+    </div>
+    <div class="product-card">
+      <div class="product-img-wrap" style="background:linear-gradient(135deg,#e8d5f2,#b8a0d0);"><img src="https://www.themaevastore.com/cdn/shop/files/BlushRushBouquet.png?v=1737020921" alt=""></div>
+      <div class="product-info"><div class="product-name">Starry Night</div><div class="product-price">FROM €62.95</div></div>
+      <a href="#" class="product-cta">Add to Cart</a>
+    </div>
+    <div class="product-card">
+      <div class="product-img-wrap" style="background:linear-gradient(135deg,#fde8d8,#f4a882);"><img src="https://cdn.arabianflora.com/uploads/product/arabian-flora/SEP2025/PinkRosesRedSprayRosesBasket-1757925355258.webp" alt=""><div class="product-tag">New</div></div>
+      <div class="product-info"><div class="product-name">Peach Rose Bouquet</div><div class="product-price">FROM €59.95</div></div>
+      <a href="#" class="product-cta">Add to Cart</a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-section">
+<div class="stat-block">
+    <div class="stat-num">126</div>
+    <div class="stat-label">Floral Variants</div>
+</div>
+  <div class="stat-block">
+    <div class="stat-num">1057</div>
+    <div class="stat-label">Total Customers</div>
+</div>
+  <div class="stat-block">
+    <div class="stat-num">960</div>
+  <div class="stat-label">Happy Customers</div>
+</div>
+</div>
+
+<!-- ABOUT -->
+<section class="about-split" id="about">
+  <div class="about-img-side">
+    <div style="font-family:'Cormorant Garamond',serif;font-size:110px;color:rgba(255,255,255,0.18);line-height:1;">✿</div>
+  </div>
+  <div class="about-text-side">
+    <div class="section-eyebrow" style="text-align:left;margin-bottom:14px;">About Us</div>
+    <h2 class="section-title" style="text-align:left;margin-bottom:26px;">Wonderful Gifts,<br><em style="font-style:italic;color:var(--deep-rose);">A Perfect Shot</em></h2>
+    <p>Discover a selection of thoughtful gifts designed to bring joy and create lasting memories. Each piece is crafted with care and creativity, making it perfect for any celebration.</p>
+    <p>Our collection has grown and evolved through the years, adapting beautifully to modern styles while preserving timeless charm.</p>
+    <a href="#" class="btn-primary" style="align-self:flex-start;margin-top:8px;">Read More</a>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="team-section">
+  <div class="section-header">
+    <div class="section-eyebrow">Meet the Makers</div>
+    <h2 class="section-title">Our Team of Experts</h2>
+    <p class="section-sub">We are passionate to serve you better</p>
+  </div>
+  <div class="team-grid">
+    <div class="team-card">
+      <div class="team-img-wrap" style="background:linear-gradient(160deg,#e8d8d5,#c4a8a4);"><img src="https://miro.medium.com/1*XWNALvCTtbZwus10PA8h2g.jpeg" alt=""></div>
+      <div class="team-info"><div class="team-name">Mason Robinson</div><div class="team-role">Florist</div></div>
+    </div>
+    <div class="team-card">
+      <div class="team-img-wrap" style="background:linear-gradient(160deg,#d5e0d8,#a4b8a8);"><img src="https://framerusercontent.com/images/GlCbIL4nxKsv7ZAI0hnidEE88.webp" alt=""></div>
+      <div class="team-info"><div class="team-name">Amber Green</div><div class="team-role">Florist</div></div>
+    </div>
+    <div class="team-card">
+      <div class="team-img-wrap" style="background:linear-gradient(160deg,#d5d8e8,#a4a8c4);"><img src="https://framerusercontent.com/images/zup2eoAJlQkklMciR0uF5Zw9V4.webp" alt=""></div>
+      <div class="team-info"><div class="team-name">Luis Phil</div><div class="team-role">Designer</div></div>
+    </div>
+    <div class="team-card">
+      <div class="team-img-wrap" style="background:linear-gradient(160deg,#e8e0d5,#c4b8a4);"><img src="https://cdn.prod.website-files.com/68c28ff9bcc4c10653ae8d54/68f75991dd95c082e34e5a32_agent%20(1).jpg" alt=""></div>
+      <div class="team-info"><div class="team-name">Mary Winne</div><div class="team-role">Designer</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- MAP & CONTACT -->
+<section class="map-section" id="contact">
+  <div class="map-embed">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3098.6!2d-77.26495!3d39.15479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b62e4f6c3e1de9%3A0x9f7b9a62e4b77c8d!2s12410%20Milestone%20Center%20Dr%20%23600%2C%20Germantown%2C%20MD%2020876!5e0!3m2!1sen!2sus!4v1700000000000"
+      width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade" title="Avenue Flowers Location">
+    </iframe>
+  </div>
+  <div class="map-info-panel">
+    <div>
+      <div class="map-info-title">Find <em>Us</em></div>
+      <div class="map-store-sub">Visit our Germantown store</div>
+    </div>
+    <div class="map-info-block">
+      <div class="map-info-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+      <div><div class="map-info-label">Store Address</div><div class="map-info-value">12410 Milestone Center Drive<br>Suite 600, Germantown MD 20876</div></div>
+    </div>
+    <div class="map-info-block">
+      <div class="map-info-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 013 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
+      <div><div class="map-info-label">Phone</div><div class="map-info-value"><a href="tel:2402846518">240-284-6518</a></div></div>
+    </div>
+    <div class="map-info-block">
+      <div class="map-info-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+      <div><div class="map-info-label">Email</div><div class="map-info-value"><a href="mailto:support@hanasoftware.com">support@hanasoftware.com</a></div></div>
+    </div>
+    <div class="map-info-block">
+      <div class="map-info-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+      <div><div class="map-info-label">Today's Hours</div><div class="map-info-value" id="todayHours">Loading…</div></div>
+    </div>
+    <a href="https://maps.google.com/?q=12410+Milestone+Center+Drive+Suite+600+Germantown+MD+20876" target="_blank" rel="noopener" class="map-directions-btn">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+      Get Directions
+    </a>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter">
+  <div class="section-eyebrow">Stay in Bloom</div>
+  <h2 class="newsletter-title">Newsletter</h2>
+  <p class="newsletter-sub">Subscribe to our weekly newsletter for seasonal collections and exclusive offers.</p>
+  <div class="newsletter-form">
+    <input type="email" placeholder="Your email address">
+    <button type="button">Subscribe</button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand-name"><em>Avenue</em> flowers</div>
+      <p class="footer-tagline">Exclusive design & hand delivered arrangements serving Germantown, Maryland and surrounding areas since 2010.</p>
+      <div class="footer-contact-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>12410 Milestone Center Drive Suite 600, Germantown Maryland 20876</span>
+      </div>
+      <div class="footer-contact-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 013 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        <span>240-284-6518</span>
+      </div>
+      <div class="footer-contact-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <span>support@hanasoftware.com</span>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Quick Links</div>
+      <ul class="footer-links">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Occasions</a></li>
+        <li><a href="#">Wedding Planner</a></li>
+        <li><a href="#">Terms &amp; Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Working Hours</div>
+      <div class="hours-row"><span class="day">Monday</span><span>06:00 AM – 11:30 PM</span></div>
+      <div class="hours-row"><span class="day">Tuesday</span><span>09:00 AM – 06:30 PM</span></div>
+      <div class="hours-row"><span class="day">Wednesday</span><span>08:00 AM – 08:00 PM</span></div>
+      <div class="hours-row"><span class="day">Thursday</span><span>09:00 AM – 07:30 PM</span></div>
+      <div class="hours-row"><span class="day">Friday</span><span>09:00 AM – 05:00 PM</span></div>
+      <div class="hours-row"><span class="day">Saturday</span><span>06:00 AM – 11:00 PM</span></div>
+      <div class="hours-row"><span class="day">Sunday</span><span>09:00 AM – 12:30 PM</span></div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2010–2026 Avenue Flowers. All rights reserved.</span>
+    <div class="social-links">
+      <a href="#" title="Facebook">f</a>
+      <a href="#" title="Instagram">ig</a>
+      <a href="#" title="Pinterest">p</a>
+      <a href="#" title="Twitter">tw</a>
+      <a href="#" title="YouTube">yt</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
